@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#5db9e3"
+    tools:context=".SobreFragment">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="1.0"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+    <TextView
+        android:id="@+id/tv_Integrantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Integrantes do Grupo"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        android:textColor="#292323"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_Espaço"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="italic"
+            android:textSize="30sp"
+            android:textColor="#292323"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Integrantes"/>
+
+    <TextView
+        android:id="@+id/tv_nome1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atila Gonçalves - 82676"
+        android:textStyle="italic"
+        android:textSize="28dp"
+        android:textColor="#292323"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Espaço"/>
+
+    <TextView
+        android:id="@+id/tv_nome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carlos Eduardo - 81945"
+        android:textStyle="italic"
+        android:textSize="28dp"
+        android:textColor="#292323"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nome1"/>
+
+    <TextView
+        android:id="@+id/tv_nome3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carolina Bartoli - 83160"
+        android:textStyle="italic"
+        android:textSize="28dp"
+        android:textColor="#292323"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nome2"/>
+
+    <TextView
+        android:id="@+id/tv_nome4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ian Makdisse - 82205"
+        android:textStyle="italic"
+        android:textSize="28dp"
+        android:textColor="#292323"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_nome3"/>
+
+    <TextView
+        android:id="@+id/tv_nome5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jair Urbano - 82733"
+        android:textStyle="italic"
+        android:textSize="28dp"
+        android:textColor="#292323"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_nome4"/>
+
+    <TextView
+        android:id="@+id/tv_nome6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leonardo Rocha - 81878"
+        android:textStyle="italic"
+        android:textSize="28dp"
+        android:textColor="#292323"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_nome5"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

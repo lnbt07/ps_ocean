@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuPrincipalFragment">
+
+    <fragment
+        android:id="@+id/menuPrincipalFragment"
+        android:name="br.com.takakadev.ps_ocean.MenuPrincipalFragment"
+        android:label="fragment_menu_principal"
+        tools:layout="@layout/fragment_menu_principal" >
+        <action
+            android:id="@+id/action_menuPrincipalFragment_to_sobreFragment"
+            app:destination="@id/sobreFragment" />
+        <action
+            android:id="@+id/action_menuPrincipalFragment_to_relatoriosFragment"
+            app:destination="@id/relatoriosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sobreFragment"
+        android:name="br.com.takakadev.ps_ocean.SobreFragment"
+        android:label="fragment_sobre"
+        tools:layout="@layout/fragment_sobre" />
+    <fragment
+        android:id="@+id/relatoriosFragment"
+        android:name="br.com.takakadev.ps_ocean.RelatoriosFragment"
+        android:label="fragment_relatorios"
+        tools:layout="@layout/fragment_relatorios" >
+        <action
+            android:id="@+id/action_relatoriosFragment_to_visualizarMetaFragment"
+            app:destination="@id/visualizarMetaFragment" />
+        <action
+            android:id="@+id/action_relatoriosFragment_to_cadastroMetasFragment"
+            app:destination="@id/cadastroMetasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/visualizarMetaFragment"
+        android:name="br.com.takakadev.ps_ocean.VisualizarMetaFragment"
+        android:label="VisualizarMetaFragment">
+        <argument
+            android:name="idMeta"
+            app:argType="string"
+            app:nullable="true"
+            />
+        <action
+            android:id="@+id/action_visualizarMetaFragment_to_cadastroMetasFragment"
+            app:destination="@id/cadastroMetasFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/cadastroMetasFragment"
+        android:name="br.com.takakadev.ps_ocean.CadastroMetasFragment"
+        android:label="CadastroMetasFragment" >
+        <argument
+            android:name="idMeta"
+            app:argType="string"
+            app:nullable="true"
+            />
+    </fragment>
+</navigation>

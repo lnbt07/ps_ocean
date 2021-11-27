@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "985289446347",
+    "firebase_url": "https://ps-ocean-default-rtdb.firebaseio.com",
+    "project_id": "ps-ocean",
+    "storage_bucket": "ps-ocean.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985289446347:android:c932301caa110892981c4e",
+        "android_client_info": {
+          "package_name": "br.com.takakadev.ps_ocean"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985289446347-o2pjkbb7tc1rfoefdcupioi8ofd0pp4f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZSSbGxG4KpbpwG5jTxSxNZLKLkgfAjns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985289446347-o2pjkbb7tc1rfoefdcupioi8ofd0pp4f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
